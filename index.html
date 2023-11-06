@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Application</title>
+    <!-- You can add your CSS styles here or link to an external stylesheet -->
+    <style>
+        /* Add some basic styles to make the widget look nice on your page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content of your web page goes here -->
+    <h1>Welcome to My Web Application</h1>
+    
+    <!-- This is where you'll integrate the GCP widget -->
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+    <!-- Search widget element is not visible by default -->
+    <gen-search-widget
+      configId="43a93d84-01a1-4379-9312-e3d7ffc2bd3b"
+      triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+
+    <!-- Element that opens the widget on click. It does not have to be an input -->
+    <input placeholder="Search here" id="searchWidgetTrigger" />
+    
+    <!-- You can add your JavaScript here or link to an external JavaScript file -->
+    <script>
+        // Your JavaScript code can go here
+    </script>
+</body>
+</html>
